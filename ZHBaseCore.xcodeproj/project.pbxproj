@@ -55,6 +55,10 @@
 		AE4AB7DE255CF935005DE400 /* TransferHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AB7D8255CF935005DE400 /* TransferHelper.swift */; };
 		AE4AB7DF255CF935005DE400 /* PrefsTableViewCell+Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AB7D9255CF935005DE400 /* PrefsTableViewCell+Switch.swift */; };
 		AE4AB7E0255CF935005DE400 /* PrefsSupportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AB7DA255CF935005DE400 /* PrefsSupportable.swift */; };
+		AE77FE1525617C05005A13C0 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE77FE1125617C05005A13C0 /* YYFPSLabel.m */; };
+		AE77FE1625617C06005A13C0 /* YYFPSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = AE77FE1225617C05005A13C0 /* YYFPSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE77FE1725617C06005A13C0 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE77FE1325617C05005A13C0 /* YYWeakProxy.m */; };
+		AE77FE1825617C06005A13C0 /* YYWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = AE77FE1425617C05005A13C0 /* YYWeakProxy.h */; };
 		AEE4665D255D0521009CFED9 /* ThemeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4665C255D0521009CFED9 /* ThemeNavigationController.swift */; };
 		AEE46666255D05D0009CFED9 /* NetworkActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE46665255D05D0009CFED9 /* NetworkActivityIndicatorManager.swift */; };
 /* End PBXBuildFile section */
@@ -110,6 +114,10 @@
 		AE4AB7D8255CF935005DE400 /* TransferHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferHelper.swift; sourceTree = "<group>"; };
 		AE4AB7D9255CF935005DE400 /* PrefsTableViewCell+Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PrefsTableViewCell+Switch.swift"; sourceTree = "<group>"; };
 		AE4AB7DA255CF935005DE400 /* PrefsSupportable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsSupportable.swift; sourceTree = "<group>"; };
+		AE77FE1125617C05005A13C0 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		AE77FE1225617C05005A13C0 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		AE77FE1325617C05005A13C0 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		AE77FE1425617C05005A13C0 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		AEE46576255D00A8009CFED9 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = ZHBaseCore/SDWebImage.framework; sourceTree = "<group>"; };
 		AEE4665C255D0521009CFED9 /* ThemeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeNavigationController.swift; sourceTree = "<group>"; };
 		AEE46665255D05D0009CFED9 /* NetworkActivityIndicatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkActivityIndicatorManager.swift; sourceTree = "<group>"; };
@@ -185,6 +193,7 @@
 		AE4AB64D255CF3AB005DE400 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				AE77FE1025617BFE005A13C0 /* YYFPSLabel */,
 				AE4AB7D4255CF935005DE400 /* PrefsMate */,
 				AE4AB753255CF6D0005DE400 /* UPYUNSDK */,
 				AE4AB6B4255CF660005DE400 /* UPYUN */,
@@ -312,6 +321,17 @@
 			path = PrefsMate;
 			sourceTree = "<group>";
 		};
+		AE77FE1025617BFE005A13C0 /* YYFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				AE77FE1225617C05005A13C0 /* YYFPSLabel.h */,
+				AE77FE1125617C05005A13C0 /* YYFPSLabel.m */,
+				AE77FE1425617C05005A13C0 /* YYWeakProxy.h */,
+				AE77FE1325617C05005A13C0 /* YYWeakProxy.m */,
+			);
+			path = YYFPSLabel;
+			sourceTree = "<group>";
+		};
 		AEE46575255D00A8009CFED9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,8 +370,10 @@
 				AE4AB6BF255CF660005DE400 /* UYFileManage.h in Headers */,
 				AE4AB683255CF556005DE400 /* APAuthInfo.h in Headers */,
 				AE4AB604255CF2B5005DE400 /* UIImage+ImageEffects.h in Headers */,
+				AE77FE1825617C06005A13C0 /* YYWeakProxy.h in Headers */,
 				AE4AB767255CF6D0005DE400 /* UpYunConcurrentBlockUpLoader.h in Headers */,
 				AE4AB682255CF556005DE400 /* APOrderInfo.h in Headers */,
+				AE77FE1625617C06005A13C0 /* YYFPSLabel.h in Headers */,
 				AE4AB6BE255CF660005DE400 /* UpYunHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,10 +469,12 @@
 				AE4AB681255CF556005DE400 /* APAuthInfo.m in Sources */,
 				AE4AB766255CF6D0005DE400 /* UpYunFileDealManger.m in Sources */,
 				AE4AB691255CF55C005DE400 /* Digest.swift in Sources */,
+				AE77FE1525617C05005A13C0 /* YYFPSLabel.m in Sources */,
 				AE4AB6BB255CF660005DE400 /* UpYunHelper.m in Sources */,
 				AE4AB76F255CF6D0005DE400 /* UpApiUtils.m in Sources */,
 				AE4AB7DD255CF935005DE400 /* PrefsTableViewCell.swift in Sources */,
 				AE4AB76C255CF6D0005DE400 /* UpSimpleHttpClient.m in Sources */,
+				AE77FE1725617C06005A13C0 /* YYWeakProxy.m in Sources */,
 				AE4AB678255CF535005DE400 /* SCLAlertView.swift in Sources */,
 				AE4AB690255CF55C005DE400 /* HMAC.swift in Sources */,
 				AE4AB605255CF2B5005DE400 /* UIImage+ImageEffects.m in Sources */,
